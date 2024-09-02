@@ -1,0 +1,14 @@
+---
+- name:
+  hosts: fedora_vms
+  gather_facts: true
+
+  tasks: 
+    #- name: debug facts
+    #  ansible.builtin.debug:
+    #    msg: "{{ ansible_facts }}"
+
+    - name: Run dnf update and reboot machine
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest

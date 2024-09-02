@@ -1,0 +1,9 @@
+fedora_vms:
+  hosts:
+    fedora1:
+    fedora2:
+    fedora3:
+
+dns_server:
+  hosts:
+    fedora3:
